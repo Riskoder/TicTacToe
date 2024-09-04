@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --white-clr: #f9fafb;
+  --bg-clr: #01121f;
+  --blue-clr: #0b2942;
+  --yellow-clr: #d97706;
+  --purple-clr: #3b0764;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  place-items: center;
+  background-color: var(--bg-clr);
+  color: var(--white-clr);
+  font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  letter-spacing: 1.2px;
+}
+
+.header {
+  min-width: 100%;
+  padding: 24px;
+  background-color: var(--blue-clr);
+}
+
+.container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  place-items: center;
+  gap: 1.25rem;
+}
+
+.player-turn {
+  font-size: 2rem;
+}
+
+.type {
+  color: var(--yellow-clr);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background-color: var(--blue-clr);
+  border: 3px solid var(--white-clr);
+}
+
+.box {
+  font-size: 2.5rem;
+  display: grid;
+  place-content: center;
+  min-width: 7.5rem;
+  min-height: 7.5rem;
+  cursor: pointer;
+  border: 2px solid var(--white-clr);
+}
+
+.btn {
+  width: 40%;
+  padding: 10px 20px;
+  background-color: var(--blue-clr);
+  border: 2px solid var(--white-clr);
+  color: inherit;
+  font-weight: bold;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--yellow-clr);
+  scale: 1.05;
+}
+
+.footer {
+  padding: 24px;
+}
+
+.link {
+  color: var(--yellow-clr);
+  text-decoration: none;
+}
