@@ -24,7 +24,7 @@ body {
   color: var(--white-clr);
   font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
-  letter-spacing: 1.2px;
+  letter-spacing: 2px;
 }
 
 .header {
