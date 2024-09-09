@@ -1,3 +1,5 @@
+//This code is strongly inspired by Michalosman, following his concepts and best practices. Thank you very much.
+
 const Player = (sign) => {
   function getPlayerSign() {
     return sign;
